@@ -1,0 +1,35 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnnoChat.Views.Chat.MessagesPage"
+             BackgroundColor="{DynamicResource SecondaryColor}"
+             Title="Messages">
+
+    <ListView VerticalOptions="FillAndExpand" SelectionMode="None">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Item 1</x:String>
+                <x:String>Item 2</x:String>
+                <x:String>Item 3</x:String>
+                <x:String>Item 4</x:String>
+                <x:String>Item 5</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" HeightRequest="200" Margin="15" Padding="15" Spacing="15">
+                        <Image Aspect="AspectFill" Source="dotnet_bot.png" HeightRequest="40" WidthRequest="40"/>
+
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                            <Label Text="User Name" FontFamily="QuickSandBold" FontSize="16"/>
+                            <Label Text="Last short text preview" FontFamily="QuickSandLight" FontSize="12"/>
+                        </StackLayout>
+
+                        <Label Text="Day" FontFamily="QuickSandLight" FontSize="12" VerticalOptions="Center"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

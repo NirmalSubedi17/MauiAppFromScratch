@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{9E35EB95-B06B-440B-8F39-C3280628E273}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Chat/MessagesPage.xaml">
+    <Files>
+      <File FileName="Views/Chat/MessagesPage.xaml" Line="17" Column="1" />
+      <File FileName="MauiProgram.cs" Line="14" Column="57" />
+      <File FileName="App.xaml" Line="13" Column="70" />
+      <File FileName="Views/Home/HomePage.xaml" Line="8" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AnnoChat" expanded="True">
+            <Node name="AnnoChat" expanded="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Fonts" expanded="True" />
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Chat" expanded="True">
+                  <Node name="MessagesPage.xaml" selected="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Main" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8FD4F3BA-190F-4BB0-8437-22DED355EF05" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AnnoChat PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8FD4F3BA-190F-4BB0-8437-22DED355EF05" />
+  <MultiItemStartupConfigurations />
+</Properties>

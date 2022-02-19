@@ -1,0 +1,23 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnnoChat.Views.Main.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}"
+       xmlns:home="clr-namespace:AnnoChat.Views.Home"
+       xmlns:chat="clr-namespace:AnnoChat.Views.Chat"
+       xmlns:account="clr-namespace:AnnoChat.Views.Account">
+
+    <TabBar>
+        <Tab Title="Home" Icon="house_solid">
+            <ShellContent ContentTemplate="{DataTemplate home:HomePage}"/>
+        </Tab>
+
+        <Tab Title="Chat" Icon="message_solid">
+            <ShellContent ContentTemplate="{DataTemplate chat:MessagesPage}"/>
+        </Tab>
+
+        <Tab Title="Settings" Icon="gear_solid">
+            <ShellContent ContentTemplate="{DataTemplate account:SettingsPage}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
