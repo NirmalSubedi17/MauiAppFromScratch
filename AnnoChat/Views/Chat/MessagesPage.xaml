@@ -4,7 +4,7 @@
              BackgroundColor="{DynamicResource SecondaryColor}"
              Title="Messages">
 
-    <CollectionView SelectionMode="None">
+    <CollectionView SelectionMode="Single" SelectionChanged="CollectionView_SelectionChanged">
         <CollectionView.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Reyan Subedi</x:String>

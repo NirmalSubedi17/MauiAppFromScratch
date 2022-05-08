@@ -14,6 +14,7 @@ public static class MauiProgram
 				fonts.AddFont("Quicksand-Light.ttf", "QuickSandLight");
 				fonts.AddFont("Quicksand-Regular.ttf", "QuickSandRegular");
 			});
+			
 
 		return builder.Build();
 	}

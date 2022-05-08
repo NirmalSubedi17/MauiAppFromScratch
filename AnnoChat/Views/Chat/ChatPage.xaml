@@ -1,0 +1,59 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnnoChat.Views.Chat.ChatPage"
+             Title="Chat"
+             xmlns:models="clr-namespace:AnnoChat.Models"
+             xmlns:chat="clr-namespace:AnnoChat.Views.Chat"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             Padding="15">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="SentMessageTemplate">
+                <Grid>
+                    <Frame HasShadow="False" CornerRadius="10"
+                           BackgroundColor="{DynamicResource SecondaryBackgroundColor}"
+                           HorizontalOptions="End" Padding="10" Margin="0">
+                        <Label Text="{Binding MessageText}"
+                               HorizontalOptions="Start"
+                               FontFamily="QuickSandRegular"
+                               FontSize="14" TextColor="White"/>
+                    </Frame>
+                    </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="ReceivedMessageTemplate">
+                <Grid>
+                    <Frame HasShadow="False" CornerRadius="10"
+                           BackgroundColor="{DynamicResource SecondaryColor}"
+                           HorizontalOptions="Start" Padding="10" Margin="0">
+                        <Label Text="{Binding MessageText}"
+                               HorizontalOptions="Start"
+                               FontFamily="QuickSandRegular"
+                               FontSize="14" TextColor="Black"/>
+                    </Frame>
+                </Grid>
+            </DataTemplate>
+
+            <chat:ChatMessageDataTemplateSelector x:Key="ChatMessageTemplateSelector"
+                ReceivedMessageTemplate="{StaticResource ReceivedMessageTemplate}"
+                SentMessageTemplate="{StaticResource SentMessageTemplate}"/>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+
+    <CollectionView ItemTemplate="{StaticResource ChatMessageTemplateSelector}"
+                    BackgroundColor="{DynamicResource BackgroundColor}">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type models:ChatMessage}">
+                <models:ChatMessage MessageText="My Pleasure anytime." Owner="OtherUser"/>
+                <models:ChatMessage MessageText="Hello how are you?" Owner="CurrentUser"/>
+                <models:ChatMessage MessageText="Hey how are you?" Owner="CurrentUser"/>
+                <models:ChatMessage MessageText="When you are coming back?" Owner="OtherUser"/>
+                <models:ChatMessage MessageText="Do you want to subscrube to my channel?" Owner="CurrentUser"/>
+                <models:ChatMessage MessageText="Sure. It's my pleasure" Owner="OtherUser"/>
+            </x:Array>
+        </CollectionView.ItemsSource>
+    </CollectionView>
+</ContentPage>

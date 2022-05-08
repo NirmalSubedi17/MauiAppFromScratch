@@ -7,5 +7,9 @@ public partial class MessagesPage : ContentPage
 		InitializeComponent();
 	}
 
+	void CollectionView_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+	{
+		Navigation.PushAsync(new ChatPage(), true);
+	}
 }
 
